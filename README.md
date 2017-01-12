@@ -10,8 +10,6 @@ To clone and run this repository you'll need [Git](https://git-scm.com/) and [No
 git clone https://github.com/take114514/WallMov
 # Go into the repository
 cd piclock
-# Install dependencies
-npm install
 # Run the app
 npm start
 ```

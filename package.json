@@ -7,10 +7,10 @@
     "start": "electron .",
 
     "build": "npm run clean;npm run build:osx",
-    "build:osx": "npm run clean:osx;electron-packager . piclock --out=dist/osx --platform=darwin --arch=x64 --version=1.4.5 --icon=assets/WallMov.icns",
+    "build:osx": "npm run clean:osx;electron-packager . WallMov --out=dist/osx --platform=darwin --arch=x64 --version=1.4.5 --icon=assets/WallMov_32.icns",
 
     "clean": "rm -rf ./dist",
-    "clean:osx": "rm -rf ./dist/osx",
+    "clean:osx": "rm -rf ./dist/osx"
   },
   "keywords": [],
   "author": "MakTak",

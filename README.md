@@ -13,7 +13,7 @@ cd WallMov
 npm start
 ```
 
-If you want to change character, please replace images in /video.
+If you want to change video, please replace video in /video.
 Or if you use from releaced package, replace video in /video.
 
 ---

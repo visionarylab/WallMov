@@ -1,5 +1,4 @@
-# piclock
-* **Now,this branch is for development.**
+# WallMov
 * This app is movie wallpaper for Mac.
 
 ##To use

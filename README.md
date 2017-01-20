@@ -19,7 +19,7 @@ Or if you use from releaced package, replace video in /video.
 
 ---
 
-* Version:0.0.1  
-* Update:2016/1/11
+* Version:0.0.2  
+* Update:2017/1/20
 * Auther:MakTak  
 * This app follow MIT licence.  

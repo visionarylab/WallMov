@@ -1,14 +1,15 @@
 const electron = require('electron')
-const {app, BrowserWindow, Menu, Tray, dialog} = electron
+const {app, BrowserWindow, Menu, Tray} = electron
 const path = require('path')
 const url = require('url')
 let mainWindow
 let tray
+
 function createWindow () {
-  var {width, height} = electron.screen.getPrimaryDisplay().size
+  const display = electron.screen.getPrimaryDisplay().size
   mainWindow = new BrowserWindow({
-    width: width,
-    height: height,
+    width: display.width,
+    height: display.height,
     resizable: false,
     frame: false
   })

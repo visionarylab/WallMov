@@ -1,14 +1,14 @@
-const {app, BrowserWindow, Menu, Tray} = require('electron')
+const electron = require('electron')
+const {app, BrowserWindow, Menu, Tray, dialog} = electron
 const path = require('path')
 const url = require('url')
-
 let mainWindow
 let tray
-let size
 function createWindow () {
+  var {width, height} = electron.screen.getPrimaryDisplay().size
   mainWindow = new BrowserWindow({
-    width: 1366,
-    height: 768,
+    width: width,
+    height: height,
     resizable: false,
     frame: false
   })
@@ -31,17 +31,17 @@ function createWindow () {
 
   const menu = Menu.buildFromTemplate([
     {
-      label: 'Quit',
-      accelerator: 'CmdOrCtrl+Q',
-      role: 'quit'
-    },
-    {
       label: 'Mute',
       accelerator: 'CmdOrCtrl+M',
       type: 'checkbox',
       click: (item) => {
         mainWindow.webContents.setAudioMuted(item.checked)
       }
+    },
+    {
+      label: 'Quit',
+      accelerator: 'CmdOrCtrl+Q',
+      role: 'quit'
     }
   ])
 
